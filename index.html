@@ -2,6 +2,15 @@
 <html lang="ja">
 
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TPH5Z96P0W"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-TPH5Z96P0W');
+    </script>
     <meta charset="utf-8" />
     <title>Educo｜教育関係者のためのコミュニティサイト</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes" />
@@ -9,7 +18,7 @@
     <meta name="keywords" content="" />
     <meta name="description" content="" />
 
-    <link rel="shortcut icon" href="" type="image/x-icon" />
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
     <link rel="apple-touch-icon" href="" sizes="180x180" />
     <link rel="icon" type="image/png" href="" sizes="192x192" />
 
@@ -19,12 +28,27 @@
     <link href="./dist/css/lp-custom.css" rel="stylesheet" />
     <link href="./dist/css/util.css" rel="stylesheet" />
     <link href="./dist/css/pattern.min.css" rel="stylesheet" />
+    <script type="text/javascript" src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script>
+        $(function () {
+            // #で始まるリンクをクリックしたら実行されます
+            $('a[href^="#application"]').click(function () {
+                // スクロールの速度
+                var speed = 400; // ミリ秒で記述
+                var href = $(this).attr("href");
+                var target = $(href == "#" || href == "" ? 'html' : href);
+                var position = target.offset().top;
+                $('body,html').animate({ scrollTop: position }, speed, 'swing');
+                return false;
+            });
+        });
+    </script>
 </head>
 
 <body>
     <header class="lp-sec-header">
         <div class="lp-block">
-            <div class="lp-logo"><img src="./img/image.png" alt="ロゴ" /></div>
+            <div class="lp-logo"><img src="./img/educo.png" alt="ロゴ" /></div>
             <h1 class="lp-title">Educo｜教育関係者のためのコミュニティサイト</h1>
         </div>
     </header>
@@ -36,7 +60,7 @@
                     現在テストを兼ねた、α版の先行ユーザーを100人限定で募集中です
                 </p>
                 <div class="lp-button">
-                    <a href="#" class="lp-c-button lp-c-button--middle">申し込みはこちらから</a>
+                    <a href="#application" class="lp-c-button lp-c-button--middle">申し込みはこちらから</a>
                 </div>
             </div>
         </div>
@@ -61,6 +85,11 @@
             </div>
         </section>
         <!-- <hr class="lp-c-line"> -->
+        <div class="lp-sec-band">
+            <div class="lp-block">
+
+            </div>
+        </div>
         <section class="lp-sec-big lp-sec-big--right">
             <div class="lp-block">
                 <h2 class="lp-title">
@@ -74,6 +103,11 @@
                 </p>
             </div>
         </section>
+        <div class="lp-sec-band">
+            <div class="lp-block">
+
+            </div>
+        </div>
         <section class="lp-sec-big lp-sec-big--left">
             <div class="lp-block">
                 <h2 class="lp-title"><span>一人一人が作っていく</span></h2>
@@ -115,7 +149,7 @@
                                 <p class="lp-text">
                                     <span>学校や、地域の活動、子供との関わりで気づいたことを共有しませんか？</span>
                                     <span>子供に関することでどんなふうに学校とコミュニケーションを取っているか。</span><span>地域ではどんな活動があるか。習い事は？</span>
-                                    <span class="marker">「勉強」だけが話題ではありません。</span>
+                                    <span class="marker">「勉強」だけではなく教育に関するすべてが話題です。</span>
                                 </p>
                             </div>
                         </div>
@@ -130,7 +164,8 @@
                     現在テストを兼ねた、α版の先行ユーザーを100人限定で募集中です
                 </p>
                 <div class="lp-button">
-                    <a href="#" class="lp-c-button lp-c-button--middle">申し込みはこちらから</a>
+                    <a href="https://forms.gle/RLpXDChwg84tigiz7" class="lp-c-button lp-c-button--middle"
+                        target="_blank">申し込みフォームへ移動</a>
                 </div>
             </div>
         </div>
