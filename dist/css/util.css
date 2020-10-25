@@ -1,0 +1,11 @@
+.mt-1 {
+  margin-top: 10.8rem;
+}
+
+span {
+  display: inline-block;
+}
+
+.marker {
+  background: linear-gradient(transparent 75%, #3ee8b5 0%);
+}
