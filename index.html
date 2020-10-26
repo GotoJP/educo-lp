@@ -6,10 +6,12 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-TPH5Z96P0W"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
 
-        gtag('config', 'G-TPH5Z96P0W');
+        gtag("config", "G-TPH5Z96P0W");
     </script>
     <meta property="og:locale" content="ja_JP" />
 
@@ -23,9 +25,10 @@
 
     <meta property="og:site_name" content="Educo" />
 
-    <meta property="og:image" content="./img/ogp.png" />
+    <meta property="og:image" content="https://gotojp.github.io/educo-lp//img/ogp.png" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:image" content="./img/ogp_big.png" />
+    <meta name="twitter:title" content="Educo｜教育関係者のためのコミュニティサイト" />
+    <meta name="twitter:image" content="https://gotojp.github.io/educo-lp//img/ogp_big.png" />
     <meta charset="utf-8" />
     <title>Educo｜教育関係者のためのコミュニティサイト</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes" />
@@ -50,9 +53,9 @@
                 // スクロールの速度
                 var speed = 400; // ミリ秒で記述
                 var href = $(this).attr("href");
-                var target = $(href == "#" || href == "" ? 'html' : href);
+                var target = $(href == "#" || href == "" ? "html" : href);
                 var position = target.offset().top;
-                $('body,html').animate({ scrollTop: position }, speed, 'swing');
+                $("body,html").animate({ scrollTop: position }, speed, "swing");
                 return false;
             });
         });
@@ -100,9 +103,7 @@
         </section>
         <!-- <hr class="lp-c-line"> -->
         <div class="lp-sec-band">
-            <div class="lp-block">
-
-            </div>
+            <div class="lp-block"></div>
         </div>
         <section class="lp-sec-big lp-sec-big--right">
             <div class="lp-block">
@@ -118,9 +119,7 @@
             </div>
         </section>
         <div class="lp-sec-band">
-            <div class="lp-block">
-
-            </div>
+            <div class="lp-block"></div>
         </div>
         <section class="lp-sec-big lp-sec-big--left">
             <div class="lp-block">
