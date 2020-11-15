@@ -1,3 +1,3 @@
 # educo-lp
 
-https://github.com/GotoJP/educo-lp.git
+https://gotojp.github.io/educo-lp/
